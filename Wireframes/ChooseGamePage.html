@@ -1,0 +1,151 @@
+<html>
+	<head>
+
+		<link rel="stylesheet" type="text/css" href="..\src\main\webapp\chooseGame.css">
+		<link rel="stylesheet" href="..\src\main\webapp\jquery-ui-1.9.1.custom.css" />
+		<script src="..\src\main\webapp\jquery-1.8.2.js"></script>
+		<script src="..\src\main\webapp\jquery-ui-1.9.1.custom.min.js"></script>
+		
+		<script>
+		$(function(){
+			$( "#loginButton" )
+	         .button()
+	         .click(function() {
+	             $( "#dialog-form" ).dialog( "open" );
+	        });
+			
+			
+			
+			
+			$( "#dialog-form" ).dialog({
+	            autoOpen: false,
+	            height: 240,
+	            width: 320,
+	            modal: true,
+	            buttons: {
+	                "Register": function() {
+	                },
+	                Cancel: function() {
+	                    $( this ).dialog( "close" );
+	                }
+	            },
+	            close: function() {
+	                allFields.val( "" ).removeClass( "ui-state-error" );
+	            }
+			});
+			
+		});
+		</script>
+	</head>
+	
+	
+	<body>	
+		<div id="dialog-form" title="Login to Fluxx">
+		    <p class="validateTips">Please enter your name and a password</p>
+		 
+		    <form>
+		    <fieldset>
+		        <label for="name">Name</label>
+		        <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" />
+		        <label for="password">Password</label>
+		        <input type="password" name="password" id="password" value="" class="text ui-widget-content ui-corner-all" />
+		    </fieldset>
+		    </form>
+		</div>
+	
+		<div id="container" class="ui-widget">
+		
+			<div id="banner">
+			FLUXX
+			</div>
+			
+			<div id="tickerTape">
+			Steve has logged in<br>
+			Steve has started game 1<br>
+			Anne has logged in<br>
+			Phil has logged in<br>
+			Anne is ready to play<br>
+			more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>
+			more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>
+			more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>
+			more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>
+			more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>
+			more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>
+			more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>
+			more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>
+			more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>more...<br>
+			</div>
+
+			<div id="gamesBanner">
+			Games
+			<button id="startNewGameButton" type="submit" value="Submit">Start New Game</button>
+			</div>
+			
+			<div id="gamesList">
+			
+				<div class="gamePanel">
+				Fluxx 1 (Not Started)
+				<button class="joinGameButton" type="submit" value="Submit">Join Game</button>
+				<br>
+				<span class="playerName">Steve: Ready to play</span><br>
+				<span class="playerName">Anne: Ready to play</span>				
+				</div>
+				
+				<div class="gamePanel">
+				Fluxx 2 (Playing)
+				<br>
+				<span class="playerName">Andy: Playing</span><br>
+				<span class="playerName">Pete: Playing</span><br>
+				<span class="playerName">Jon: Playing</span><br>
+				<span class="playerName">Sarah: Playing</span>
+				</div>
+
+				<div class="gamePanel">
+				Fluxx 2 (Playing)
+				<br>
+				<span class="playerName">Andy: Playing</span><br>
+				<span class="playerName">Pete: Playing</span>
+				</div>
+
+				<div class="gamePanel">
+				Fluxx 2 (Playing)
+				<br>
+				<span class="playerName">Andy: Playing</span><br>
+				<span class="playerName">Pete: Playing</span>
+				</div>
+
+				<div class="gamePanel">
+				Fluxx 2 (Playing)
+				<br>
+				<span class="playerName">Andy: Playing</span><br>
+				<span class="playerName">Pete: Playing</span>
+				</div>
+
+				<div class="gamePanel">
+				Fluxx 2 (Playing)
+				<br>
+				<span class="playerName">Andy: Playing</span><br>
+				<span class="playerName">Pete: Playing</span>
+				</div>
+				
+			</div>
+
+			<div id="playersBanner">
+			Players Logged-in
+			<button id="loginButton" type="submit" value="Submit">Log In</button>
+			</div>
+			
+			<div id="playersList">
+			<span class="playerName">Carole</span><br>
+			<span class="playerName">Bill</span><br>
+			<span class="playerName">Lou</span><br>
+			<span class="playerName">Simon</span><br>
+			<span class="playerName">Fraser</span><br>
+			<span class="playerName">Chris</span>
+			
+			</div>
+			
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,21 @@
+
+Assumes the server has just been started
+
+Logging In
+----------
+In Browser 1...
+Navigate to http://localhost:1970/FluxxWeb/fluxx.html
+The Log In button is visible
+The Start New Game button is not visible
+No Join Game buttons are visible
+No players show in the players logged-in panel
+
+Click the Log In button
+The login dialog is displayed
+Type "Mark" into Name and "Fish" into Password
+Click Register
+The fluxx page reloads
+Mark is shown in the Players logged-in panel with (Me) displayed next to it
+The Start New Game button is now displayed
+Refresh the page: The application still recognises that Mark is the logged in player
+ 

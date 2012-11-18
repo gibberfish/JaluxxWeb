@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:p="http://www.springframework.org/schema/p"
+xmlns:context="http://www.springframework.org/schema/context"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+   	<!--
+    ************************** KEEPERS **************************** 
+     -->
+	<bean id="brain" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Brain"/>
+	    <constructor-arg value="KEEPER"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+	
+	<bean id="bread" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Bread"/>
+	    <constructor-arg value="KEEPER"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+	
+	<bean id="chocolate" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Chocolate"/>
+	    <constructor-arg value="KEEPER"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+	<bean id="cookies" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Cookies"/>
+	    <constructor-arg value="KEEPER"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>	
+
+	<bean id="death" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Death"/>
+	    <constructor-arg value="KEEPER"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+	<bean id="dreams" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Dreams"/>
+	    <constructor-arg value="KEEPER"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+	<bean id="love" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Love"/>
+	    <constructor-arg value="KEEPER"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+	<bean id="milk" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Milk"/>
+	    <constructor-arg value="KEEPER"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+    <bean id="money" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Money"/>
+	    <constructor-arg value="KEEPER"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+    <bean id="moon" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Moon"/>
+	    <constructor-arg value="KEEPER"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+    <bean id="peace" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Peace"/>
+	    <constructor-arg value="KEEPER"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+    <bean id="rocket" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Rocket"/>
+	    <constructor-arg value="KEEPER"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>	
+			
+    <bean id="sleep" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Sleep"/>
+	    <constructor-arg value="KEEPER"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+    <bean id="sun" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Sun"/>
+	    <constructor-arg value="KEEPER"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+    <bean id="television" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Television"/>
+	    <constructor-arg value="KEEPER"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+    <bean id="time" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Time"/>
+	    <constructor-arg value="KEEPER"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+    <bean id="toaster" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Toaster"/>
+	    <constructor-arg value="KEEPER"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+    <bean id="war" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="War"/>
+	    <constructor-arg value="KEEPER"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+    <!--
+    ************************** GOALS **************************** 
+     -->
+	<bean id="tenCardsInHand" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="10 Cards In Hand"/>
+	    <constructor-arg value="GOAL"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+
+	<bean id="fiveKeepers" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="5 Keepers"/>
+	    <constructor-arg value="GOAL"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+	
+	<bean id="allYouNeedIsLove" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="All You Need Is Love"/>
+	    <constructor-arg value="GOAL"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+
+	<bean id="appliances" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Appliances"/>
+	    <constructor-arg value="GOAL"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+		
+	<bean id="bakedGoods" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Baked Goods"/>
+	    <constructor-arg value="GOAL"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+		
+	<bean id="bedTime" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Bed Time"/>
+	    <constructor-arg value="GOAL"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+
+	<bean id="brainNoTv" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Brain (no TV)"/>
+	    <constructor-arg value="GOAL"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+	
+	<bean id="chocolateCookies" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Chocolate Cookies"/>
+	    <constructor-arg value="GOAL"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+	
+	<bean id="chocolateMilk" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Chocolate Milk"/>
+	    <constructor-arg value="GOAL"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+	
+	<bean id="deathByChocolate" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Death by Chocolate"/>
+	    <constructor-arg value="GOAL"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+	
+	<bean id="dreamLand" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Dreamland"/>
+	    <constructor-arg value="GOAL"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+	
+	<bean id="heartsAndMinds" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Hearts and Minds"/>
+	    <constructor-arg value="GOAL"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+	
+	<bean id="hippyism" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Hippyism"/>
+	    <constructor-arg value="GOAL"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+	
+	<bean id="milkAndCookies" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Milk and Cookies"/>
+	    <constructor-arg value="GOAL"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+	
+	<bean id="nightAndDay" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Night and Day"/>
+	    <constructor-arg value="GOAL"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+	
+	<bean id="peaceNoWar" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Peace (no War)"/>
+	    <constructor-arg value="GOAL"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+	
+	<bean id="rocketScience" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Rocket Science"/>
+	    <constructor-arg value="GOAL"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+	
+	<bean id="rocketToTheMoon" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Rocket to the Moon"/>
+	    <constructor-arg value="GOAL"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+	
+	<bean id="squishyChocolate" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Squishy Chocolate"/>
+	    <constructor-arg value="GOAL"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+	
+	<bean id="timeIsMoney" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Time is Money"/>
+	    <constructor-arg value="GOAL"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+	
+	<bean id="toast" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Toast"/>
+	    <constructor-arg value="GOAL"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+	
+	<bean id="warEqualsDeath" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="War = Death"/>
+	    <constructor-arg value="GOAL"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+	
+	<bean id="winningTheLottery" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Winning the Lottery"/>
+	    <constructor-arg value="GOAL"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+	
+    <!--
+    ************************** RULES **************************** 
+     -->
+	<bean id="draw2" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Draw 2"/>
+	    <constructor-arg value="RULE"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+	
+	<bean id="draw3" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Draw 3"/>
+	    <constructor-arg value="RULE"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+	
+	<bean id="draw4" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Draw 4"/>
+	    <constructor-arg value="RULE"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+
+	<bean id="draw5" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Draw 5"/>
+	    <constructor-arg value="RULE"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+
+	<bean id="play2" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Play 2"/>
+	    <constructor-arg value="RULE"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+	
+	<bean id="play3" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Play 3"/>
+	    <constructor-arg value="RULE"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+	
+	<bean id="play4" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Play 4"/>
+	    <constructor-arg value="RULE"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+	
+	<bean id="playAll" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Play All"/>
+	    <constructor-arg value="RULE"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+	
+	<bean id="handLimit0" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Hand Limit 0"/>
+	    <constructor-arg value="RULE"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+
+	<bean id="handLimit1" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Hand Limit 1"/>
+	    <constructor-arg value="RULE"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+	
+	<bean id="handLimit2" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Hand Limit 2"/>
+	    <constructor-arg value="RULE"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+
+	<bean id="keeperLimit2" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Keeper Limit 2"/>
+	    <constructor-arg value="RULE"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+    <bean id="keeperLimit3" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Keeper Limit 3"/>
+	    <constructor-arg value="RULE"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+    <bean id="keeperLimit4" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Keeper Limit 4"/>
+	    <constructor-arg value="RULE"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+    <bean id="doubleAgenda" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Double Agenda"/>
+	    <constructor-arg value="RULE"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+    <bean id="reverseOrder" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="ReverseOrder"/>
+	    <constructor-arg value="RULE"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+    <bean id="firstPlayRandom" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="First Play Random"/>
+	    <constructor-arg value="RULE"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+    <bean id="noHandBonus" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="No-Hand Bonus"/>
+	    <constructor-arg value="RULE"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+    <bean id="poorBonus" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Poor Bonus"/>
+	    <constructor-arg value="RULE"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+    <bean id="richBonus" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Rich Bonus"/>
+	    <constructor-arg value="RULE"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+    <bean id="inflation" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Inflation"/>
+	    <constructor-arg value="RULE"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+
+    <!--
+    ************************** ACTIONS **************************** 
+     -->
+	<bean id="jackpot" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Jackpot"/>
+	    <constructor-arg value="ACTION"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+	<bean id="discardAndDraw" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Discard and Draw"/>
+	    <constructor-arg value="ACTION"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+	<bean id="draw2AndUseEm" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Draw 2 and use 'em"/>
+	    <constructor-arg value="ACTION"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+	<bean id="draw3Play2OfThem" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Draw, 3, Play 2 of them"/>
+	    <constructor-arg value="ACTION"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+	<bean id="emptyTheTrash" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Empty the Trash"/>
+	    <constructor-arg value="ACTION"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+	<bean id="everybodyGets1" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Everybody Gets 1"/>
+	    <constructor-arg value="ACTION"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+	<bean id="exchangeKeepers" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Exchange Keepers"/>
+	    <constructor-arg value="ACTION"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+	<bean id="letsDoThatAgain" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Let's Do That Again"/>
+	    <constructor-arg value="ACTION"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+	<bean id="letsSimplify" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Let's Simplify"/>
+	    <constructor-arg value="ACTION"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+	<bean id="noLimits" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="No Limits"/>
+	    <constructor-arg value="ACTION"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+	<bean id="rotateHands" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Rotate Hands"/>
+	    <constructor-arg value="ACTION"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+	<bean id="rulesReset" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Rules Reset"/>
+	    <constructor-arg value="ACTION"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+	<bean id="scrambleKeepers" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Scramble Keepers"/>
+	    <constructor-arg value="ACTION"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+	<bean id="stealAKeeper" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Steal a Keeper"/>
+	    <constructor-arg value="ACTION"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+	<bean id="takeAnotherTurn" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Take Another Turn"/>
+	    <constructor-arg value="ACTION"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+	<bean id="taxation" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Taxation"/>
+	    <constructor-arg value="ACTION"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+	<bean id="tradeHands" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Trade Hands"/>
+	    <constructor-arg value="ACTION"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+	<bean id="trashAKeeper" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Trash a Keeper"/>
+	    <constructor-arg value="ACTION"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+	<bean id="trashANewRule" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Trash a New Rule"/>
+	    <constructor-arg value="ACTION"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+    
+	<bean id="useWhatYouTake" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Use What You Take"/>
+	    <constructor-arg value="ACTION"/>
+	    <constructor-arg value="default.jpg"/>
+    </bean>
+
+   	<!--
+    ************************** PACK **************************** 
+    -->
+	<bean id="pack" class="com.mindbadger.jaluxx.Pack">
+	    <property name="cardsInPack">
+		    <list>
+		        <ref bean="brain"/>
+		        <ref bean="bread"/>
+		        <ref bean="chocolate"/>
+		        <ref bean="cookies"/>
+		        <ref bean="death"/>
+		        <ref bean="dreams"/>
+		        <ref bean="love"/>
+		        <ref bean="milk"/>
+		        <ref bean="money"/>
+		        <ref bean="moon"/>
+		        <ref bean="peace"/>
+		        <ref bean="rocket"/>
+		        <ref bean="sleep"/>
+		        <ref bean="sun"/>
+		        <ref bean="television"/>
+		        <ref bean="time"/>
+		        <ref bean="toaster"/>
+		        <ref bean="war"/>
+		        <ref bean="tenCardsInHand"/>
+		        <ref bean="fiveKeepers"/>
+		        <ref bean="allYouNeedIsLove"/>
+		        <ref bean="appliances"/>
+		        <ref bean="bakedGoods"/>
+		        <ref bean="bedTime"/>
+		        <ref bean="brainNoTv"/>
+		        <ref bean="chocolateCookies"/>
+		        <ref bean="chocolateMilk"/>
+		        <ref bean="deathByChocolate"/>
+		        <ref bean="dreamLand"/>
+		        <ref bean="heartsAndMinds"/>
+		        <ref bean="hippyism"/>
+		        <ref bean="milkAndCookies"/>
+		        <ref bean="nightAndDay"/>
+		        <ref bean="peaceNoWar"/>
+		        <ref bean="rocketScience"/>
+		        <ref bean="rocketToTheMoon"/>
+		        <ref bean="squishyChocolate"/>
+		        <ref bean="timeIsMoney"/>
+		        <ref bean="toast"/>
+		        <ref bean="warEqualsDeath"/>
+		        <ref bean="winningTheLottery"/>
+		        <ref bean="draw2"/>
+		        <ref bean="draw3"/>
+		        <ref bean="draw4"/>
+		        <ref bean="draw5"/>
+		        <ref bean="play2"/>
+		        <ref bean="play3"/>
+		        <ref bean="play4"/>
+		        <ref bean="playAll"/>
+		        <ref bean="handLimit0"/>
+		        <ref bean="handLimit1"/>
+		        <ref bean="handLimit2"/>
+		        <ref bean="keeperLimit2"/>
+		        <ref bean="keeperLimit3"/>
+		        <ref bean="keeperLimit4"/>
+		        <ref bean="doubleAgenda"/>
+		        <ref bean="reverseOrder"/>
+		        <ref bean="firstPlayRandom"/>
+		        <ref bean="noHandBonus"/>
+		        <ref bean="poorBonus"/>
+		        <ref bean="richBonus"/>
+		        <ref bean="inflation"/>
+		        <ref bean="jackpot"/>
+		        <ref bean="discardAndDraw"/>
+		        <ref bean="draw2AndUseEm"/>
+		        <ref bean="draw3Play2OfThem"/>
+		        <ref bean="emptyTheTrash"/>
+		        <ref bean="everybodyGets1"/>
+		        <ref bean="exchangeKeepers"/>
+		        <ref bean="letsDoThatAgain"/>
+		        <ref bean="letsSimplify"/>
+		        <ref bean="noLimits"/>
+		        <ref bean="rotateHands"/>
+		        <ref bean="rulesReset"/>
+		        <ref bean="scrambleKeepers"/>
+		        <ref bean="stealAKeeper"/>
+		        <ref bean="takeAnotherTurn"/>
+		        <ref bean="taxation"/>
+		        <ref bean="tradeHands"/>
+		        <ref bean="trashAKeeper"/>
+		        <ref bean="trashANewRule"/>
+		        <ref bean="useWhatYouTake"/>
+		    </list>
+	    </property>
+	</bean>
+</beans>
