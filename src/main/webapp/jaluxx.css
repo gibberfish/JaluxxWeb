@@ -56,17 +56,68 @@ body {
 	text-align: center;
 }
 
+.playerSelector {
+	width: 179px;
+	height: 15px;
+	text-align: center;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #F1FEBE;
+}
 
 #oppositionPanel {
 	position: absolute;
 	top:26;
-	left:202;
-	width: 820px;
+	left:2;
+	width: 1020px;
 	height: 196px;
 	background: #B2FFFF;
 	-moz-border-radius: 7px;
 	border-radius: 7px;
 }
+
+
+
+
+#oppositionList {
+	position: absolute;
+	top:6;
+	left:6;
+	width: 195px;
+	height: 184px;
+	background: #B233FF;
+}
+#oppositionContentScroll {
+	position: absolute;
+	top:6;
+	left:201;
+	width: 812px;
+	height: 184px;
+	background: #E1E1E1;
+	overflow-x:hidden; overflow-y: auto;
+}
+#oppositionContent {
+	position: absolute;
+	top:0;
+	left:0;
+	width: 812px;
+	height: 200px;
+	background: #3D3D3D;
+}
+.oppositionSelectorInactive {
+	width: 195px;
+	height: 34px;
+	background: red;
+}
+.oppositionSelectorActive {
+	width: 195px;
+	height: 34px;
+	background: white;
+}
+
+
+
+
 #oppositionScroll {
 	position: absolute;
 	top:6;
@@ -75,14 +126,6 @@ body {
 	height: 184px;
 	!background: #F1FEBE;
 	overflow-x:hidden; overflow-y: auto;
-}
-#oppositionContent {
-	position: absolute;
-	top:0;
-	left:0;
-	width: 208px;
-	height: 408px;
-	!background: #F1FEB3;
 }
 
 
