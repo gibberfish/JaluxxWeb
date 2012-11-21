@@ -3,7 +3,7 @@
 
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="chooseGame.css">
+<link rel="stylesheet" type="text/css" href="chooseGame.css"/>
 <link rel="stylesheet" type="text/css" href="jquery-ui-1.9.1.custom.css" />
 
 <script src="jquery-1.8.2.js"></script>
