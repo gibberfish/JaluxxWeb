@@ -264,24 +264,74 @@ body {
 }
 
 /* --- Positioning for game area ---  */
+.pack {top: 90px; left: 80px;}
+.discard {top: 90px; left: 0px;}
+.goal1 {top: 0px; left: 40px;}
+.goal2 {top: 0px; left: 120px;}
+.basic-rule {top: 90px; left: 160px;}
+.rule1 {top: 90px; left: 240px;}
+.rule2 {top: 90px; left: 320px;}
+.rule3 {top: 90px; left: 400px;}
+.rule4 {top: 90px; left: 480px;}
+.rule5 {top: 90px; left: 560px;}
+.rule6 {top: 90px; left: 640px;}
+.rule7 {top: 90px; left: 720px;}
+.rule8 {top: 0px; left: 240px;}
+.rule9 {top: 0px; left: 320px;}
+.rule10 {top: 0px; left: 400px;}
+.rule11 {top: 0px; left: 480px;}
+.rule12 {top: 0px; left: 560px;}
+.rule13 {top: 0px; left: 640px;}
+.rule14 {top: 00px; left: 720px;}
 
-#pack {top: 90px; left: 80px;}
-#discard {top: 90px; left: 0px;}
-#goal1 {top: 0px; left: 40px;}
-#goal2 {top: 0px; left: 120px;}
-#basic-rule {top: 90px; left: 160px;}
-#rule1 {top: 90px; left: 240px;}
-#rule2 {top: 90px; left: 320px;}
-#rule3 {top: 90px; left: 400px;}
-#rule4 {top: 90px; left: 480px;}
-#rule5 {top: 90px; left: 560px;}
-#rule6 {top: 90px; left: 640px;}
-#rule7 {top: 90px; left: 720px;}
-#rule8 {top: 0px; left: 240px;}
-#rule9 {top: 0px; left: 320px;}
-#rule10 {top: 0px; left: 400px;}
-#rule11 {top: 0px; left: 480px;}
-#rule12 {top: 0px; left: 560px;}
-#rule13 {top: 0px; left: 640px;}
-#rule14 {top: 00px; left: 720px;}
+/* --- Positioning for opposition area ---  */
+.op-hand {top: 45px; left: 180px;}
+.op-keeper1 {top: 0px; left:260px;}
+.op-keeper2 {top: 0px; left:340px;}
+.op-keeper3 {top: 0px; left:420px;}
+.op-keeper4 {top: 0px; left:500px;}
+.op-keeper5 {top: 0px; left:580px;}
+.op-keeper6 {top: 0px; left:660px;}
+.op-keeper7 {top: 0px; left:740px;}
+.op-keeper8 {top: 0px; left:820px;}
+.op-keeper9 {top: 0px; left:900px;}
+.op-keeper10 {top: 90px; left:260px;}
+.op-keeper11 {top: 90px; left:340px;}
+.op-keeper12 {top: 90px; left:420px;}
+.op-keeper13 {top: 90px; left:500px;}
+.op-keeper14 {top: 90px; left:580px;}
+.op-keeper15 {top: 90px; left:660px;}
+.op-keeper16 {top: 90px; left:740px;}
+.op-keeper17 {top: 90px; left:820px;}
+.op-keeper18 {top: 90px; left:900px;}
 
+/* --- Positioning for my area ---  */
+.my-keeper1 {top: 0px; left:0px;}
+.my-keeper2 {top: 0px; left:80px;}
+.my-keeper3 {top: 0px; left:160px;}
+.my-keeper4 {top: 0px; left:240px;}
+.my-keeper5 {top: 0px; left:320px;}
+.my-keeper6 {top: 0px; left:400px;}
+.my-keeper7 {top: 0px; left:480px;}
+.my-keeper8 {top: 0px; left:560px;}
+.my-keeper9 {top: 0px; left:640px;}
+.my-keeper10 {top: 0px; left:720px;}
+.my-keeper11 {top: 0px; left:800px;}
+.my-keeper12 {top: 0px; left:880px;}
+.my-keeper13 {top: 0px; left:960px;}
+.my-keeper14 {top: 0px; left:1040px;}
+
+.my-hand1 {top: 90px; left:0px;}
+.my-hand2 {top: 90px; left:80px;}
+.my-hand3 {top: 90px; left:160px;}
+.my-hand4 {top: 90px; left:240px;}
+.my-hand5 {top: 90px; left:320px;}
+.my-hand6 {top: 90px; left:400px;}
+.my-hand7 {top: 90px; left:480px;}
+.my-hand8 {top: 90px; left:560px;}
+.my-hand9 {top: 90px; left:640px;}
+.my-hand10 {top: 90px; left:720px;}
+.my-hand11 {top: 90px; left:800px;}
+.my-hand12 {top: 90px; left:880px;}
+.my-hand13 {top: 90px; left:960px;}
+.my-hand14 {top: 90px; left:1040px;}
