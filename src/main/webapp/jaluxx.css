@@ -36,12 +36,15 @@ body {
 	position: absolute;
 	top:26;
 	left:2;
-	width: 1020px;
-	height: 196px;
+	width: 1012px;
+	height: 188px;
 	background: #B2FFFF;
 	-moz-border-radius: 7px;
 	border-radius: 7px;
 }
+
+
+
 #oppositionList {
 	position: absolute;
 	top:6;
@@ -72,12 +75,19 @@ body {
 	height: 34px;
 	background: #E6FFFF;
 }
+
+
 .oppositionSelectorActive {
 	width: 195px;
 	height: 34px;
 	background: white;
 }
-
+.ui-tabs-vertical { width: 63em; padding: .2em .2em .2em .2em; }
+.ui-tabs-vertical .ui-tabs-nav { padding: .1em .1em .1em .1em; float: left; width: 10em; }
+.ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 0 0 0; height: 2em; font-size: 70%;}
+.ui-tabs-vertical .ui-tabs-nav li a { display:block; }
+.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: 0em; border-right-width: 1px; border-right-width: 1px; }
+.ui-tabs-vertical .ui-tabs-panel { padding: 0em; float: right; width: 52.9em; height: 11.8em;}
 
 
 
@@ -253,9 +263,4 @@ body {
 	border-radius: 3px;
 }
 
-.ui-tabs-vertical { width: 63em; }
-.ui-tabs-vertical .ui-tabs-nav { padding: .1em .1em .1em .1em; float: left; width: 10em; background: red;}
-.ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; }
-.ui-tabs-vertical .ui-tabs-nav li a { display:block; background: yellow;}
-.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: 0em; border-right-width: 1px; border-right-width: 1px; }
-.ui-tabs-vertical .ui-tabs-panel { padding: 0em; float: right; width: 48.5em; background: green; height: 9.5em;}
+

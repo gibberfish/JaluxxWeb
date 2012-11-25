@@ -1,4 +1,4 @@
 $(function(){
-	$( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
-	$( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+	$( "#oppositionPanel" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+	$( "#oppositionPanel li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
 });
