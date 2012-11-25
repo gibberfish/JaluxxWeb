@@ -187,7 +187,8 @@ body {
 
 
 .card {
-	position: relative;
+	!position: relative;
+	position: absolute;
 	float:left;
 	float:top;
 	
@@ -262,4 +263,25 @@ body {
 	border-radius: 3px;
 }
 
+/* --- Positioning for game area ---  */
+
+#pack {top: 90px; left: 80px;}
+#discard {top: 90px; left: 0px;}
+#goal1 {top: 0px; left: 40px;}
+#goal2 {top: 0px; left: 120px;}
+#basic-rule {top: 90px; left: 160px;}
+#rule1 {top: 90px; left: 240px;}
+#rule2 {top: 90px; left: 320px;}
+#rule3 {top: 90px; left: 400px;}
+#rule4 {top: 90px; left: 480px;}
+#rule5 {top: 90px; left: 560px;}
+#rule6 {top: 90px; left: 640px;}
+#rule7 {top: 90px; left: 720px;}
+#rule8 {top: 0px; left: 240px;}
+#rule9 {top: 0px; left: 320px;}
+#rule10 {top: 0px; left: 400px;}
+#rule11 {top: 0px; left: 480px;}
+#rule12 {top: 0px; left: 560px;}
+#rule13 {top: 0px; left: 640px;}
+#rule14 {top: 00px; left: 720px;}
 
