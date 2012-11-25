@@ -45,6 +45,12 @@
 			<div id="gamePanel">
 				<div id="gameScroll">
 					<div id="gameContent">
+						<div class="card pack">
+							<div class="cardName">
+								<c:out value="${player.game.drawPile.size()}" />
+							</div>
+							<img class="cardImageCentre" src="img/fluxx_cover.jpg"/>
+						</div>
 					</div>
 				</div>
 			</div>

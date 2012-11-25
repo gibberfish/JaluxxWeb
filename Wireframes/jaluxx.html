@@ -73,7 +73,12 @@
 			<div id="gamePanel">
 				<div id="gameScroll">
 					<div id="gameContent">
-						<div class="card pack">Pack</div>
+						<div class="card pack">
+							<div class="cardName">
+								<c:out value="${player.game.drawPile.size}" />
+							</div>
+							<img class="cardImageCentre" src="../src/main/webapp/img/fluxx_cover.jpg"/>
+						</div>
 						<div class="card discard">Discard</div>
 						<div class="card goal1">Goal 1</div>
 						<div class="card goal2">Goal 2</div>
