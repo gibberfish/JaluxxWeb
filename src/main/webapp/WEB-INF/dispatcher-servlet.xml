@@ -50,9 +50,13 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
     </property>
   </bean>
    -->
+
+  <bean id="dealer" class="com.mindbadger.jaluxx.Dealer">
+  </bean>
    
   <bean id="gameManager" class="com.mindbadger.jaluxx.gamemanager.GameManager">
       <property name="pack" ref="pack"/>
+      <property name="dealer" ref="dealer"/>
   </bean>
   
 </beans>
