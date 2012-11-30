@@ -29,7 +29,13 @@
 				<c:forEach var="player" items="${me.game.players}">
 					<c:if test="${player != me}">
 						<div id="<c:out value='${player.name}'/>-panel">
-					        <c:out value="${player.name}" />'s Tab
+						
+							<div class="card pack">
+								<div class="cardName">
+									<c:out value="${player.hand.size()}" />
+								</div>
+								<img class="cardImageCentre" src="img/fluxx_cover.jpg"/>
+							</div>
 					    </div>
 					</c:if>
 				</c:forEach>
@@ -58,6 +64,26 @@
 			<div id="myPanel">
 				<div id="myScroll">
 					<div id="myContent">
+						<c:forEach var="card" items="${me.hand}">
+							<c:if test="${card.cardType.text == 'Action'}">
+								<div class="card action">
+							</c:if>
+							<c:if test="${card.cardType.text == 'Goal'}">
+								<div class="card goal">
+							</c:if>
+							<c:if test="${card.cardType.text == 'Keeper'}">
+								<div class="card keeper">
+							</c:if>
+							<c:if test="${card.cardType.text == 'Rule'}">
+								<div class="card rule">
+							</c:if>
+							
+								<div class="cardName">
+									<c:out value="${card.name}" />
+								</div>
+								<img class="cardImageCentre" src="<c:out value='${card.image}' />"/>
+							</div>
+						</c:forEach>
 					</div>
 				</div>
 			</div>
