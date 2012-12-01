@@ -30,7 +30,7 @@
 					<c:if test="${player != me}">
 						<div id="<c:out value='${player.name}'/>-panel">
 						
-							<div class="card pack">
+							<div class="card op-hand">
 								<div class="cardName">
 									<c:out value="${player.hand.size()}" />
 								</div>
@@ -64,22 +64,22 @@
 			<div id="myPanel">
 				<div id="myScroll">
 					<div id="myContent">
-						<c:forEach var="card" items="${me.hand}">
+						<c:forEach var="card" items="${me.hand}" varStatus="status">
 							<c:if test="${card.cardType.text == 'Action'}">
-								<div class="card action">
+								<div class="card my-hand${status.count} action">
 							</c:if>
 							<c:if test="${card.cardType.text == 'Goal'}">
-								<div class="card goal">
+								<div class="card my-hand${status.count} goal">
 							</c:if>
 							<c:if test="${card.cardType.text == 'Keeper'}">
-								<div class="card keeper">
+								<div class="card my-hand${status.count} keeper">
 							</c:if>
 							<c:if test="${card.cardType.text == 'Rule'}">
-								<div class="card rule">
+								<div class="card my-hand${status.count} rule">
 							</c:if>
 							
 								<div class="cardName">
-									<c:out value="${card.name}" />
+									<c:out value="${card.cardName}" />
 								</div>
 								<img class="cardImageCentre" src="<c:out value='${card.image}' />"/>
 							</div>

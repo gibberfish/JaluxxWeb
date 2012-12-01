@@ -52,7 +52,7 @@
 				<div class="gamePanel">
 					<div class="gamePanelLeft">
 					Jaluxx
-					<c:out value="${game.playing ? ' (Playing)' : ' (Not Started)'}"/>
+					<c:out value="${game.status.text == 'Playing' ? ' (Playing)' : ' (Not Started)'}"/>
 					<br>
 					
 					<c:forEach var="player" items="${game.players}">
