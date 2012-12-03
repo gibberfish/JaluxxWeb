@@ -6,7 +6,11 @@
 		<script src="../src/main/webapp/jquery-ui-1.9.1.custom.min.js"></script>
 		<script src="../src/main/webapp/jaluxx.js"></script>
 		
-	
+		<script>
+		$(document).ready(function() {
+			$("#my1").draggable({ revert: true, zIndex: 999 });
+		}); 
+		</script>
 	</head>
 	
 	<body>
@@ -119,7 +123,7 @@
 						<div class="card my-keeper13">Keeper13</div>
 						<div class="card my-keeper14">Keeper14</div>
 
-						<div class="card my-hand1">Hand1</div>
+						<div id="my1" class="card my-hand1">Hand1</div>
 						<div class="card my-hand2">Hand2</div>
 						<div class="card my-hand3">Hand3</div>
 						<div class="card my-hand4">Hand4</div>
