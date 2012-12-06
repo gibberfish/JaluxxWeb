@@ -9,7 +9,7 @@
 		<script>
 		$(document).ready(function() {
 			$("#my1").draggable({
-				revert: true,
+				//revert: true,
 				appendTo: 'body',
 				helper: 'clone',
 				start: function ( event, ui ) {
@@ -22,7 +22,20 @@
 				}
 			});
 			
-			$("#gamePanel").droppable({ accept: '#my1' });
+			$("#gamePanel").droppable({
+				accept: '#my1',
+				drop: function ( event, ui ) {
+					alert ("Dropping: " + ui.draggable.attr('id'));
+					var element = ui.draggable.detach();
+					$(this).append(element);
+				},
+				over: function (event,ui) {
+					$(ui.helper[0]).addClass("draggingAccept");
+				},				
+				out: function (event,ui) {
+					$(ui.helper[0]).removeClass("draggingAccept");
+				},
+			});
 		}); 
 		</script>
 	</head>
