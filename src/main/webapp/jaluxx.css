@@ -1,5 +1,6 @@
 body {
 	text-align: center;
+	zIndex: 10000;
 }
 
 #screen {
@@ -161,7 +162,7 @@ body {
 	width: 1020px;
 	height: 212px;
 	background: #CCFF99;
-	overflow-y:hidden; overflow-x: auto;
+	!overflow-y:hidden; overflow-x: auto;
 	-moz-border-radius: 7px;
 	border-radius: 7px;
 }
@@ -171,8 +172,8 @@ body {
 	left:6;
 	width: 1008px;
 	height: 200px;
-	!background: #F1FEBE;
-	overflow-y:hidden; overflow-x: auto;
+	background: #F1FEBE;
+	!overflow-y:hidden; overflow-x: auto;
 }
 #myContent {
 	position: absolute;
@@ -335,3 +336,6 @@ body {
 .my-hand12 {top: 90px; left:880px;}
 .my-hand13 {top: 90px; left:960px;}
 .my-hand14 {top: 90px; left:1040px;}
+
+
+.dragging {border-color: red;}

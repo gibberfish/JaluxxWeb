@@ -8,7 +8,21 @@
 		
 		<script>
 		$(document).ready(function() {
-			$("#my1").draggable({ revert: true, zIndex: 999 });
+			$("#my1").draggable({
+				revert: true,
+				appendTo: 'body',
+				helper: 'clone',
+				start: function ( event, ui ) {
+					$(ui.helper[0]).addClass("dragging");
+					$(this).hide();
+				},
+				stop: function ( event, ui) {
+					$(ui.helper[0]).removeClass("dragging");
+					$(this).show();
+				}
+			});
+			
+			$("#gamePanel").droppable({ accept: '#my1' });
 		}); 
 		</script>
 	</head>
