@@ -22,10 +22,11 @@
 				}
 			});
 			
-			$("#gamePanel").droppable({
+			$("#gameContent").droppable({
 				accept: '#my1',
 				drop: function ( event, ui ) {
-					alert ("Dropping: " + ui.draggable.attr('id'));
+					ui.draggable.addClass("rule8");
+					ui.draggable.removeClass("my-hand1");
 					var element = ui.draggable.detach();
 					$(this).append(element);
 				},
