@@ -518,8 +518,6 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 	<bean id="pack" class="com.mindbadger.jaluxx.Pack">
 	    <property name="cardsInPack">
 		    <list>
-		        <ref bean="brain"/>
-		        <ref bean="bread"/>
 		        <ref bean="chocolate"/>
 		        <ref bean="cookies"/>
 		        <ref bean="death"/>
@@ -600,6 +598,8 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 		        <ref bean="trashAKeeper"/>
 		        <ref bean="trashANewRule"/>
 		        <ref bean="useWhatYouTake"/>
+		        <ref bean="brain"/>
+		        <ref bean="bread"/>
 		    </list>
 	    </property>
 	</bean>

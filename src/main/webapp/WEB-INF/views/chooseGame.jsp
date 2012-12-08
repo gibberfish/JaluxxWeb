@@ -36,7 +36,6 @@
 			<c:forEach var="action" items="${actions}">
 				<c:out value="${action}" />
 				<br>
-				<br>
 			</c:forEach>
 		</div>
 
