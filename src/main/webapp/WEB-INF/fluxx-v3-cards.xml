@@ -263,6 +263,18 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
     <!--
     ************************** RULES **************************** 
      -->
+	<bean id="basicRules" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Basic Rules"/>
+	    <constructor-arg value="RULE"/>
+	    <constructor-arg value="default.jpg"/>
+		<property name="instructions">
+		  <list>
+		    <value type="com.mindbadger.jaluxx.instruction.InstructionType">DRAW</value>
+		    <value type="com.mindbadger.jaluxx.instruction.InstructionType">PLAY</value>
+		  </list>
+		</property>
+    </bean>
+
 	<bean id="draw2" class="com.mindbadger.jaluxx.card.Card">
 	    <constructor-arg value="Draw 2"/>
 	    <constructor-arg value="RULE"/>
@@ -515,7 +527,7 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
    	<!--
     ************************** PACK **************************** 
     -->
-	<bean id="pack" class="com.mindbadger.jaluxx.Pack">
+	<bean id="pack" class="com.mindbadger.jaluxx.game.Pack">
 	    <property name="cardsInPack">
 		    <list>
 		        <ref bean="chocolate"/>

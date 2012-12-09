@@ -11,6 +11,7 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
   <context:component-scan base-package="com.mindbadger"/>
   
   <import resource="fluxx-v3-cards.xml"/>
+  <import resource="fluxx-v3-instructions.xml"/>
   
   <bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
   <property name="mediaTypes">
@@ -51,12 +52,13 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
   </bean>
    -->
 
-  <bean id="dealer" class="com.mindbadger.jaluxx.Dealer">
+  <bean id="dealer" class="com.mindbadger.jaluxx.game.Dealer">
   </bean>
 
   <bean id="gameFactory" class="com.mindbadger.jaluxx.gamemanager.GameFactory">
       <property name="pack" ref="pack"/>
       <property name="dealer" ref="dealer"/>
+      <property name="basicRulesCard" ref="basicRules"/>
   </bean>
    
   <bean id="gameManager" class="com.mindbadger.jaluxx.gamemanager.GameManager">
