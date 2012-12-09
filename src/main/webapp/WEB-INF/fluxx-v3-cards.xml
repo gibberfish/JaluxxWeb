@@ -269,8 +269,8 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 	    <constructor-arg value="default.jpg"/>
 		<property name="instructions">
 		  <list>
-		    <value type="com.mindbadger.jaluxx.instruction.InstructionType">DRAW</value>
-		    <value type="com.mindbadger.jaluxx.instruction.InstructionType">PLAY</value>
+		    <value type="com.mindbadger.jaluxx.instruction.Instruction">DRAW</value>
+		    <value type="com.mindbadger.jaluxx.instruction.Instruction">PLAY</value>
 		  </list>
 		</property>
     </bean>
