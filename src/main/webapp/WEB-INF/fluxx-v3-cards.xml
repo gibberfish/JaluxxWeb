@@ -263,14 +263,15 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
     <!--
     ************************** RULES **************************** 
      -->
-	<bean id="basicRules" class="com.mindbadger.jaluxx.card.Card">
-	    <constructor-arg value="Basic Rules"/>
+	<bean id="draw1" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Draw 1"/>
 	    <constructor-arg value="RULE"/>
 	    <constructor-arg value="default.jpg"/>
+		<property name="groupName" value="DRAW"/>
+		<property name="sequence" value="20"/>
 		<property name="instructions">
 		  <list>
 		    <value type="com.mindbadger.jaluxx.instruction.Instruction">DRAW</value>
-		    <value type="com.mindbadger.jaluxx.instruction.Instruction">PLAY</value>
 		  </list>
 		</property>
     </bean>
@@ -279,84 +280,161 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 	    <constructor-arg value="Draw 2"/>
 	    <constructor-arg value="RULE"/>
 	    <constructor-arg value="default.jpg"/>
-    </bean>
+	    <property name="groupName" value="DRAW"/>
+	    <property name="sequence" value="20"/>
+		<property name="instructions">
+		  <list>
+		    <value type="com.mindbadger.jaluxx.instruction.Instruction">DRAW</value>
+		    <value type="com.mindbadger.jaluxx.instruction.Instruction">DRAW</value>
+		  </list>
+		</property>
+	</bean>
 	
 	<bean id="draw3" class="com.mindbadger.jaluxx.card.Card">
 	    <constructor-arg value="Draw 3"/>
 	    <constructor-arg value="RULE"/>
 	    <constructor-arg value="default.jpg"/>
-    </bean>
+	    <property name="groupName" value="DRAW"/>
+	    <property name="sequence" value="20"/>
+		<property name="instructions">
+		  <list>
+		    <value type="com.mindbadger.jaluxx.instruction.Instruction">DRAW</value>
+		    <value type="com.mindbadger.jaluxx.instruction.Instruction">DRAW</value>
+		    <value type="com.mindbadger.jaluxx.instruction.Instruction">DRAW</value>
+		  </list>
+		</property>
+	</bean>
 	
 	<bean id="draw4" class="com.mindbadger.jaluxx.card.Card">
 	    <constructor-arg value="Draw 4"/>
 	    <constructor-arg value="RULE"/>
 	    <constructor-arg value="default.jpg"/>
-    </bean>
+	    <property name="groupName" value="DRAW"/>
+	    <property name="sequence" value="20"/>
+		<property name="instructions">
+		  <list>
+		    <value type="com.mindbadger.jaluxx.instruction.Instruction">DRAW</value>
+		    <value type="com.mindbadger.jaluxx.instruction.Instruction">DRAW</value>
+		    <value type="com.mindbadger.jaluxx.instruction.Instruction">DRAW</value>
+		    <value type="com.mindbadger.jaluxx.instruction.Instruction">DRAW</value>
+		  </list>
+		</property>
+	</bean>
 
 	<bean id="draw5" class="com.mindbadger.jaluxx.card.Card">
 	    <constructor-arg value="Draw 5"/>
 	    <constructor-arg value="RULE"/>
 	    <constructor-arg value="default.jpg"/>
-    </bean>
+	    <property name="groupName" value="DRAW"/>
+	    <property name="sequence" value="20"/>
+		<property name="instructions">
+		  <list>
+		    <value type="com.mindbadger.jaluxx.instruction.Instruction">DRAW</value>
+		    <value type="com.mindbadger.jaluxx.instruction.Instruction">DRAW</value>
+		    <value type="com.mindbadger.jaluxx.instruction.Instruction">DRAW</value>
+		    <value type="com.mindbadger.jaluxx.instruction.Instruction">DRAW</value>
+		    <value type="com.mindbadger.jaluxx.instruction.Instruction">DRAW</value>
+		  </list>
+		</property>
+	</bean>
 
+	<bean id="play1" class="com.mindbadger.jaluxx.card.Card">
+	    <constructor-arg value="Play 1"/>
+	    <constructor-arg value="RULE"/>
+	    <constructor-arg value="default.jpg"/>
+	    <property name="groupName" value="PLAY"/>
+	    <property name="sequence" value="60"/>
+		<property name="instructions">
+		  <list>
+		    <value type="com.mindbadger.jaluxx.instruction.Instruction">PLAY</value>
+		  </list>
+		</property>
+    </bean>
+	
 	<bean id="play2" class="com.mindbadger.jaluxx.card.Card">
 	    <constructor-arg value="Play 2"/>
 	    <constructor-arg value="RULE"/>
 	    <constructor-arg value="default.jpg"/>
+	    <property name="groupName" value="PLAY"/>
+	    <property name="sequence" value="60"/>
+		<property name="instructions">
+		  <list>
+		    <value type="com.mindbadger.jaluxx.instruction.Instruction">PLAY</value>
+		    <value type="com.mindbadger.jaluxx.instruction.Instruction">PLAY</value>
+		  </list>
+		</property>
     </bean>
 	
 	<bean id="play3" class="com.mindbadger.jaluxx.card.Card">
 	    <constructor-arg value="Play 3"/>
 	    <constructor-arg value="RULE"/>
 	    <constructor-arg value="default.jpg"/>
+	    <property name="groupName" value="PLAY"/>
+	    <property name="sequence" value="60"/>
     </bean>
 	
 	<bean id="play4" class="com.mindbadger.jaluxx.card.Card">
 	    <constructor-arg value="Play 4"/>
 	    <constructor-arg value="RULE"/>
 	    <constructor-arg value="default.jpg"/>
+	    <property name="groupName" value="PLAY"/>
+	    <property name="sequence" value="60"/>
     </bean>
 	
 	<bean id="playAll" class="com.mindbadger.jaluxx.card.Card">
 	    <constructor-arg value="Play All"/>
 	    <constructor-arg value="RULE"/>
 	    <constructor-arg value="default.jpg"/>
+	    <property name="groupName" value="PLAY"/>
+	    <property name="sequence" value="60"/>
     </bean>
 	
 	<bean id="handLimit0" class="com.mindbadger.jaluxx.card.Card">
 	    <constructor-arg value="Hand Limit 0"/>
 	    <constructor-arg value="RULE"/>
 	    <constructor-arg value="default.jpg"/>
+	    <property name="groupName" value="HANDLIMIT"/>
+	    <property name="sequence" value="90"/>
     </bean>
 
 	<bean id="handLimit1" class="com.mindbadger.jaluxx.card.Card">
 	    <constructor-arg value="Hand Limit 1"/>
 	    <constructor-arg value="RULE"/>
 	    <constructor-arg value="default.jpg"/>
+	    <property name="groupName" value="HANDLIMIT"/>
+	    <property name="sequence" value="90"/>
     </bean>
 	
 	<bean id="handLimit2" class="com.mindbadger.jaluxx.card.Card">
 	    <constructor-arg value="Hand Limit 2"/>
 	    <constructor-arg value="RULE"/>
 	    <constructor-arg value="default.jpg"/>
+	    <property name="groupName" value="HANDLIMIT"/>
+	    <property name="sequence" value="90"/>
     </bean>
 
 	<bean id="keeperLimit2" class="com.mindbadger.jaluxx.card.Card">
 	    <constructor-arg value="Keeper Limit 2"/>
 	    <constructor-arg value="RULE"/>
 	    <constructor-arg value="default.jpg"/>
+	    <property name="groupName" value="KEEPERLIMIT"/>
+	    <property name="sequence" value="15"/>
     </bean>
     
     <bean id="keeperLimit3" class="com.mindbadger.jaluxx.card.Card">
 	    <constructor-arg value="Keeper Limit 3"/>
 	    <constructor-arg value="RULE"/>
 	    <constructor-arg value="default.jpg"/>
+	    <property name="groupName" value="KEEPERLIMIT"/>
+	    <property name="sequence" value="15"/>
     </bean>
     
     <bean id="keeperLimit4" class="com.mindbadger.jaluxx.card.Card">
 	    <constructor-arg value="Keeper Limit 4"/>
 	    <constructor-arg value="RULE"/>
 	    <constructor-arg value="default.jpg"/>
+	    <property name="groupName" value="KEEPERLIMIT"/>
+	    <property name="sequence" value="15"/>
     </bean>
     
     <bean id="doubleAgenda" class="com.mindbadger.jaluxx.card.Card">
